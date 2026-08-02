@@ -1,4 +1,54 @@
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="weather-card">
+    <h2>Weather Dashboard</h2>
+    
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="panhera kalan" />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <!-- Loading Spinner / Message -->
+    <p id="loading-text" class="status-msg hidden">Fetching weather data...</p>
+    
+    <!-- Error Message -->
+    <p id="error-msg" class="status-msg error hidden"></p>
+
+    <!-- Weather Display Area -->
+    <div id="weather-info" class="weather-info hidden">
+      <h3 id="faridabad">--</h3>
+      <p id="weather-desc">--</p>
+      
+      <div class="metrics">
+        <div class="metric">
+          <span class="label">Temperature</span>
+          <span id="temp" class="val">-- °C</span>
+        </div>
+        <div class="metric">
+          <span class="label">Humidity</span>
+          <span id="humidity" class="val">-- %</span>
+        </div>
+        <div class="metric">
+          <span class="label">Wind Speed</span>
+          <span id="wind" class="val">-- m/s</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

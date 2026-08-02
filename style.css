@@ -1,3 +1,121 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.weather-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.status-msg {
+  font-size: 14px;
+  margin: 15px 0;
+  color: #64748b;
+}
+
+.status-msg.error {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+.weather-info {
+  margin-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+}
+
+#city-name {
+  font-size: 22px;
+  color: #0f172a;
+}
+
+#weather-desc {
+  color: #64748b;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.metric {
+  background: #f8fafc;
+  padding: 10px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.metric .label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.metric .val {
+  font-size: 15px;
+  font-weight: bold;
+  color: #1e293b;
+}
 /* ==========================
    CSS Variables
 ========================== */
